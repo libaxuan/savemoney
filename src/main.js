@@ -24,7 +24,7 @@ createApp(App).mount('#app')
 window._gr_ignore_local_rule = true
 gdp('init', '5', 'a475c218b5f29f58', {
     // 调试时候打开 上线关闭,打开后可在本地看console日志
-    debug: true,
+    debug: false,
     enableIdMapping: true,
     compress:true,
     hashtag: true,
