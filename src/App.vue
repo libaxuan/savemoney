@@ -10,7 +10,9 @@
       <tbody>
       <tr v-for="(year, yearIndex) in years" :key="yearIndex">
         <td>{{ year }}</td>
-        <td v-for="(amount, amountIndex) in amounts" :key="amountIndex" @click="changeBackgroundColor(amountIndex, yearIndex)" :class="{ 'green-background': isSelected(amountIndex, yearIndex) }">
+        <td v-for="(amount, amountIndex) in amounts" :key="amountIndex"
+            @click="changeBackgroundColor(amountIndex, yearIndex)"
+            :class="{ 'green-background': isSelected(amountIndex, yearIndex) }">
           {{ calculateValue(amount, year) }}
         </td>
       </tr>
@@ -18,6 +20,7 @@
     </table>
   </div>
 </template>
+
 
 <script>
 export default {
@@ -65,6 +68,7 @@ export default {
   }
 };
 </script>
+
 
 <style>
 table {

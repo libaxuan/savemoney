@@ -1,4 +1,4 @@
-import { createApp } from 'vue'
+import {createApp} from 'vue'
 import App from './App.vue'
 
 import gdp from "gio-webjs-sdk-cdp";
@@ -26,10 +26,23 @@ gdp('init', '5', 'a475c218b5f29f58', {
     // 调试时候打开 上线关闭,打开后可在本地看console日志
     debug: false,
     enableIdMapping: true,
-    compress:true,
+    compress: true,
     hashtag: true,
     host: siteHost,
     scheme: 'https://',
     dataCollect: true,
     version: '0.0.1'
 });
+console.log(`
+                                                               
+                                                               
+ ___   __ _ __   __ ___   _ __ ___    ___   _ __    ___  _   _ 
+/ __| / _\` |\\ \\ / // _ \\ | '_ \` _ \\  / _ \\ | '_ \\  / _ \\| | | |
+\\__ \\| (_| | \\ V /|  __/ | | | | | || (_) || | | ||  __/| |_| |
+|___/ \\__,_|  \\_/  \\___| |_| |_| |_| \\___/ |_| |_| \\___| \\__, |
+                                                          __/ |
+                                                         |___/                                                                                                                              
+`);
+let content = `\n\n版本: 0.0.1 \n主页: https://autoaigpt.cn`;
+console.log(content);
+
